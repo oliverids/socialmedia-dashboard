@@ -1,5 +1,11 @@
 @import "tema";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+%fontAwesome {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1rem;
+}
 
 * {
     margin: 0;
@@ -21,7 +27,7 @@ html {
 
 body {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     height: 100%;
     background: linear-gradient(180deg, var(--main) 16%, var(--body) 4%);
 }
@@ -47,4 +53,33 @@ h1 {
 
 p {
     font-weight: 400;
+}
+
+.span-number {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        @extend %fontAwesome;
+        display: block;
+    }
+
+    &.up {
+        color: #00c784;
+
+        &:before {
+            content: "\f0de";
+            margin: 6px 8px 0 0;
+        }
+    }
+
+    &.down {
+        color: #c32136;
+
+        &:before {
+            content: "\f0dd";
+            margin: -6px 8px 0 0;
+        }
+    }
 }
