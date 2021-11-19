@@ -5,7 +5,13 @@
         ul {
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             align-items: center;
+
+            @media only screen and (min-width: 768px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
 
             .o-item {
                 width: 328px;
@@ -46,6 +52,12 @@
             }
             li:last-child {
                 margin-bottom: 0;
+            }
+
+            @media only screen and (min-width: 768px) {
+                li:nth-child(7) {
+                    margin-bottom: 0;
+                }
             }
         }
     }
