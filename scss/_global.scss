@@ -30,6 +30,16 @@ body {
     font-family: "Roboto", sans-serif;
     height: 100%;
     background: linear-gradient(180deg, var(--main) 16%, var(--body) 4%);
+
+    * {
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+
+    &.escuro {
+        * {
+            transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+    }
 }
 
 .container {
@@ -87,6 +97,21 @@ p {
         &:before {
             content: "\f0dd";
             margin: -6px 8px 0 0;
+        }
+    }
+}
+
+footer {
+    padding: 20px 0;
+    margin-top: 1rem;
+
+    p {
+        text-align: center;
+        margin: 0 auto;
+        color: var(--texto);
+
+        a {
+            color: rgb(0, 86, 199);
         }
     }
 }

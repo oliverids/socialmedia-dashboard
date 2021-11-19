@@ -35,6 +35,12 @@ main {
                 padding: 0 2px;
                 background: none;
 
+                &.desligado {
+                    &::-webkit-slider-runnable-track {
+                        background: #d5d5d5;
+                    }
+                }
+
                 &:focus {
                     outline: none;
                 }
@@ -45,6 +51,8 @@ main {
                     cursor: pointer;
                     box-shadow: 0px 0px 0px #000000;
                     background: linear-gradient(45deg, #3B99D9, #3ce89d);
+                    transition: background 1s ease-in-out;
+                    
                     border-radius: 34px;
                     border: 0px solid #010101;
                     padding: 0 4px;
