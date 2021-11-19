@@ -178,14 +178,17 @@
 </body>
 <script>
     const input = document.getElementById('theme');
-    input.addEventListener('input', () => {
-        if (input.value == 0) {
-            document.body.classList.remove('escuro');
-            input.classList.add('desligado');
-        } else {
-            document.body.classList.add('escuro');
-            input.classList.remove('desligado');
-        }
+
+    ['input', 'change'].forEach(event => {
+        input.addEventListener(event, () => {
+            if (input.value == 0) {
+                document.body.classList.remove('escuro');
+                input.classList.add('desligado');
+            } else {
+                document.body.classList.add('escuro');
+                input.classList.remove('desligado');
+            }
+        })
     })
 </script>
 

@@ -29,6 +29,12 @@
                 justify-content: center;
                 border-radius: 8px;
                 position: relative;
+                transition: background 0.3s ease-in-out;
+
+                &:hover {
+                    background: var(--cardhover);
+                    transition: background 0.3s ease-in-out;
+                }
 
                 @media only screen and (min-width: 768px) {
                     margin: 0 1rem 2rem 1rem;

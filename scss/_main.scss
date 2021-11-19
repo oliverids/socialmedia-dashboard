@@ -65,8 +65,6 @@ main {
                     cursor: pointer;
                     box-shadow: 0px 0px 0px #000000;
                     background: linear-gradient(45deg, #3b99d9, #3ce89d);
-                    transition: background 1s ease-in-out;
-
                     border-radius: 34px;
                     border: 0px solid #010101;
                     padding: 0 4px;
@@ -79,9 +77,6 @@ main {
                     cursor: pointer;
                     -webkit-appearance: none;
                     margin-top: 4px;
-                }
-                &:focus::-webkit-slider-runnable-track {
-                    background: linear-gradient(45deg, #3b99d9, #3ce89d);
                 }
             }
         }
